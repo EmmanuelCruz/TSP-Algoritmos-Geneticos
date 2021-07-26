@@ -32,10 +32,15 @@ public class TravellingProblem extends PApplet{
     
     @Override
     public void setup() {
-        size( ancho*celda, (alto*celda)+32);
+        
         background(50);
         fuente = createFont("Arial",12,true);
         model = new Viaje();
+    }
+    
+    @Override
+    public void settings(){
+        size( ancho*celda, (alto*celda)+32);
     }
     
     /**
